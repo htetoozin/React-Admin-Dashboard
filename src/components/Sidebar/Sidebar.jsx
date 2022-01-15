@@ -1,0 +1,99 @@
+import React from "react";
+import {
+  LineStyle,
+  Timeline,
+  TrendingUp,
+  PermIdentity,
+  Storefront,
+  AttachMoney,
+  BarChart,
+  MailOutline,
+  DynamicFeed,
+  ChatBubbleOutline,
+  WorkOutline,
+  Report,
+} from "@material-ui/icons";
+import "./Sidebar.css";
+
+const Sidebar = () => {
+  return (
+    <div className="sidebar">
+      <div className="sidebarWrapper">
+        <div className="sidebarMenu">
+          <div className="sidebarTitle">Dashboard</div>
+          <ul className="sidebarList">
+            <li className="sidebarListItem">
+              <LineStyle />
+              Home
+            </li>
+            <li className="sidebarListItem">
+              <Timeline />
+              Anayltics
+            </li>
+            <li className="sidebarListItem">
+              <TrendingUp />
+              Sales
+            </li>
+          </ul>
+        </div>
+        <div className="sidebarMenu">
+          <div className="sidebarTitle">Quick Menu</div>
+          <ul className="sidebarList">
+            <li className="sidebarListItem active">
+              <PermIdentity className="sidebarIcon" />
+              Users
+            </li>
+            <li className="sidebarListItem">
+              <Storefront className="sidebarIcon" />
+              Products
+            </li>
+            <li className="sidebarListItem">
+              <AttachMoney className="sidebarIcon" />
+              Transactions
+            </li>
+            <li className="sidebarListItem">
+              <BarChart className="sidebarIcon" />
+              Reports
+            </li>
+          </ul>
+        </div>
+        <div className="sidebarMenu">
+          <h3 className="sidebarTitle">Notifications</h3>
+          <ul className="sidebarList">
+            <li className="sidebarListItem active">
+              <MailOutline className="sidebarIcon" />
+              Mail
+            </li>
+            <li className="sidebarListItem">
+              <DynamicFeed className="sidebarIcon" />
+              Feedback
+            </li>
+            <li className="sidebarListItem">
+              <ChatBubbleOutline className="sidebarIcon" />
+              Messages
+            </li>
+          </ul>
+        </div>
+        <div className="sidebarMenu">
+          <h3 className="sidebarTitle">Staff</h3>
+          <ul className="sidebarList">
+            <li className="sidebarListItem active">
+              <WorkOutline className="sidebarIcon" />
+              Manage
+            </li>
+            <li className="sidebarListItem">
+              <Timeline className="sidebarIcon" />
+              Anayltics
+            </li>
+            <li className="sidebarListItem">
+              <Report className="sidebarIcon" />
+              Reports
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Sidebar;
